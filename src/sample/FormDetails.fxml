@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Scene1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffe97f;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.POController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="720.0" prefWidth="243.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1037.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="282.0" prefHeight="66.0" prefWidth="227.0" text="La Fortaleza" textAlignment="CENTER" textFill="#bc2222">
+               <font>
+                  <Font name="Times New Roman Bold" size="40.0" />
+               </font></Label>
+            <Label alignment="TOP_CENTER" layoutX="8.0" layoutY="338.0" prefHeight="48.0" prefWidth="227.0" text="Elegance. Longevity. Quality." textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logoImageView" fitHeight="158.0" fitWidth="227.0" layoutX="8.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LogoLaFortaleza.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="FinOrdTable" layoutX="74.0" layoutY="623.0" mnemonicParsing="false" onAction="#viewOrderTable" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #656765;" text="FINAL ORDERS" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="VenBrTable" layoutX="41.0" layoutY="564.0" mnemonicParsing="false" onAction="#viewBrVenTable" style="-fx-background-color: #656765;" text="BRANCH/VENDOR" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="POtable" layoutX="30.0" layoutY="503.0" mnemonicParsing="false" onAction="#viewPOTable" style="-fx-background-color: #656765;" text="PURCHASE ORDERS" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="itemTable" layoutX="157.0" layoutY="443.0" mnemonicParsing="false" onAction="#viewItemTable" style="-fx-background-color: #656765;" text="ITEMS" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="submitButton" layoutX="1105.0" layoutY="585.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="117.0" text="SUBMIT">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="614.0" layoutY="12.0" text="PURCHASE ORDER FORM">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="73.0" prefHeight="22.0" prefWidth="163.0" text="Purchase Order No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="907.0" layoutY="74.0" text="Creation Date:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="232.0" text="Name:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="186.0" text="Vendor ID:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="277.0" text="Contact Person:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="320.0" text="Address:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="371.0" text="Telephone No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="297.0" layoutY="413.0" text="FAX No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="908.0" layoutY="138.0" text="Branch No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="908.0" layoutY="181.0" text="Contact Person:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="910.0" layoutY="225.0" text="Address:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="904.0" layoutY="371.0" text="Telephone No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="909.0" layoutY="413.0" text="FAX No.:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="479.0" text="Delivery Date:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="622.0" layoutY="480.0" text="Terms of Payment:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="625.0" layoutY="521.0" text="Mode of Payment:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="296.0" layoutY="522.0" text="Validity Date:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="298.0" layoutY="560.0" text="Prepared By:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label layoutX="296.0" layoutY="604.0" text="Approved By:">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <TextField fx:id="POTxtField" layoutX="464.0" layoutY="68.0" prefHeight="31.0" prefWidth="388.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="VenNameTxtField" layoutX="364.0" layoutY="227.0" prefHeight="31.0" prefWidth="489.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="CreateDateTxtField" layoutX="1026.0" layoutY="68.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="VenIDTxtField" layoutX="390.0" layoutY="179.0" prefHeight="31.0" prefWidth="461.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="VenCPersonTxtField" layoutX="428.0" layoutY="271.0" prefHeight="31.0" prefWidth="425.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="VenTelTxtField" layoutX="418.0" layoutY="365.0" prefHeight="31.0" prefWidth="437.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="VenFaxTxtField" layoutX="379.0" layoutY="407.0" prefHeight="31.0" prefWidth="475.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="DelDateTxtField" layoutX="407.0" layoutY="473.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="ToPTxtField" layoutX="769.0" layoutY="474.0" prefHeight="31.0" prefWidth="453.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="ValDateTxtField" layoutX="407.0" layoutY="515.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="PrepByTxtField" layoutX="407.0" layoutY="556.0" prefHeight="31.0" prefWidth="362.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="AppByTxtField" layoutX="407.0" layoutY="598.0" prefHeight="31.0" prefWidth="362.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></TextField>
+      <RadioButton fx:id="RB1" layoutX="1029.0" layoutY="136.0" mnemonicParsing="false" onAction="#getBranch" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="branchPick" />
+         </toggleGroup>
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RB2" layoutX="1104.0" layoutY="136.0" mnemonicParsing="false" onAction="#getBranch" text="2" toggleGroup="$branchPick">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="RB3" layoutX="1181.0" layoutY="136.0" mnemonicParsing="false" onAction="#getBranch" text="3" toggleGroup="$branchPick">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></RadioButton>
+      <Label fx:id="branchCPersonLabel" layoutX="1030.0" layoutY="181.0" text="---">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label fx:id="branchAddLabel" alignment="TOP_LEFT" layoutX="991.0" layoutY="220.0" prefHeight="134.0" prefWidth="227.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label fx:id="branchTelLabel" layoutX="1030.0" layoutY="371.0" text="---">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <Label fx:id="branchFaxLabel" layoutX="980.0" layoutY="413.0" text="---">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></Label>
+      <ChoiceBox fx:id="venCBox" layoutX="668.0" layoutY="135.0" prefHeight="25.0" prefWidth="179.0" />
+      <RadioButton fx:id="mopCash" layoutX="810.0" layoutY="520.0" mnemonicParsing="false" onAction="#pickMoP" text="Cash">
+         <toggleGroup>
+            <ToggleGroup fx:id="MoPPck" />
+         </toggleGroup>
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="mopCheque" layoutX="949.0" layoutY="521.0" mnemonicParsing="false" onAction="#pickMoP" text="Cheque" toggleGroup="$MoPPck">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="mopBankTrans" layoutX="1094.0" layoutY="520.0" mnemonicParsing="false" onAction="#pickMoP" text="Bank Transfer" toggleGroup="$MoPPck">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font></RadioButton>
+      <TextField fx:id="VenAddTxtField" layoutX="384.0" layoutY="317.0" prefHeight="25.0" prefWidth="468.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="298.0" layoutY="639.0" text="Warning/s:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="POWarning" layoutX="394.0" layoutY="639.0" text="---">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="nullWarning" layoutX="394.0" layoutY="671.0" text="---">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

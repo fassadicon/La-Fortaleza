@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffe97f;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BrVenController">
+   <children>
+      <Button layoutX="1153.0" layoutY="647.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="brTable" layoutX="91.0" layoutY="51.0" prefHeight="200.0" prefWidth="1098.0">
+        <columns>
+          <TableColumn fx:id="brNoColumn" prefWidth="160.0" text="Branch No" />
+          <TableColumn fx:id="brCPersonColumn" prefWidth="178.0" text="Contact Person" />
+            <TableColumn fx:id="brAddColumn" prefWidth="451.0" text="Address" />
+            <TableColumn fx:id="brTelColumn" prefWidth="157.0" text="Telephone No." />
+            <TableColumn fx:id="brFaxColumn" prefWidth="151.0" text="FAX No." />
+        </columns>
+      </TableView>
+      <TableView fx:id="venTable" layoutX="91.0" layoutY="296.0" prefHeight="326.0" prefWidth="1098.0">
+        <columns>
+          <TableColumn fx:id="venIDColumn" prefWidth="136.0" text="Vendor ID" />
+          <TableColumn fx:id="venNameColumn" prefWidth="163.0" text="Name" />
+            <TableColumn fx:id="venAddColumn" prefWidth="385.0" text="Address" />
+            <TableColumn fx:id="venCPersonColumn" prefWidth="185.0" text="Contact Person" />
+            <TableColumn fx:id="venTelColumn" prefWidth="116.0" text="Telephone No." />
+            <TableColumn fx:id="venFaxColumn" prefWidth="112.0" text="FAX No." />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
